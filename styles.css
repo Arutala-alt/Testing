@@ -1,24 +1,24 @@
 :root {
   color-scheme: light;
-  --paper: #f6f5f0;
-  --paper-deep: #eceae1;
-  --ink: #1c2a24;
-  --muted: #6e756d;
-  --green: #244c3e;
-  --green-dark: #19382e;
-  --lime: #c2d47a;
-  --line: #d9d8cf;
-  --copy-muted: #666e67;
-  --copy-soft: #676f68;
-  --copy-subtle: #7a7f75;
-  --copy-tag: #4e5a50;
-  --surface-art: #e8e9df;
-  --accent-dot: #91a94f;
-  --accent-hover: #687c36;
-  --accent-muted: #75883e;
-  --accent-alt: #b39a5b;
+  --paper: #f3f7fc;
+  --paper-deep: #e7eef8;
+  --ink: #1b2d43;
+  --muted: #66788b;
+  --blue: #24558a;
+  --blue-dark: #183b63;
+  --sky: #b9d9f5;
+  --line: #d3dfec;
+  --copy-muted: #596d83;
+  --copy-soft: #52677d;
+  --copy-subtle: #72849a;
+  --copy-tag: #405872;
+  --surface-art: #e5edf7;
+  --accent-dot: #4c8dd0;
+  --accent-hover: #1f5f9f;
+  --accent-muted: #6b9bc9;
+  --accent-alt: #83b3dc;
   --button-label: #fff;
-  --button-hover: #19382e;
+  --button-hover: #153858;
   --serif: "Playfair Display", Georgia, serif;
   --sans: "DM Sans", Arial, sans-serif;
   --mono: "DM Mono", monospace;
@@ -31,23 +31,25 @@
 
 :root[data-theme="dark"] {
   color-scheme: dark;
-  --paper: #121a16;
-  --paper-deep: #202922;
-  --ink: #e6ebe3;
-  --muted: #a3aea4;
-  --green: #b7cc88;
-  --line: #3b4840;
-  --copy-muted: #b4beb4;
-  --copy-soft: #abb6aa;
-  --copy-subtle: #aab4a7;
-  --copy-tag: #ccd5c7;
-  --surface-art: #202b24;
-  --accent-dot: #b5cc7a;
-  --accent-hover: #d3e7a1;
-  --accent-muted: #bdcf91;
-  --accent-alt: #c5ad72;
-  --button-label: #182019;
-  --button-hover: #cadf9c;
+  --paper: #111c2a;
+  --paper-deep: #1d2b3d;
+  --ink: #e6edf7;
+  --muted: #a3b3c5;
+  --blue: #9ec5ef;
+  --blue-dark: #0b1521;
+  --sky: #c4def7;
+  --line: #394b61;
+  --copy-muted: #b8c6d6;
+  --copy-soft: #b0bfd0;
+  --copy-subtle: #a7b8cb;
+  --copy-tag: #d0ddec;
+  --surface-art: #1d2b3d;
+  --accent-dot: #8db9e7;
+  --accent-hover: #bddcff;
+  --accent-muted: #b6d1ef;
+  --accent-alt: #a4c8eb;
+  --button-label: #17283d;
+  --button-hover: #c2ddf7;
 }
 
 * {
@@ -163,7 +165,7 @@ button:focus-visible {
   height: 35px;
   place-items: center;
   border-radius: 50%;
-  background: var(--green);
+  background: var(--blue);
   color: var(--paper);
   font-family: var(--serif);
   font-size: 14px;
@@ -210,8 +212,8 @@ button:focus-visible {
 }
 
 .nav-contact:hover {
-  border-color: var(--green);
-  background: var(--green);
+  border-color: var(--blue);
+  background: var(--blue);
   color: var(--button-label);
 }
 
@@ -289,7 +291,7 @@ p {
 .hero-name,
 .section-heading em,
 .contact h2 em {
-  color: var(--green);
+  color: var(--blue);
   font-family: var(--serif);
   font-weight: 500;
 }
@@ -338,7 +340,7 @@ p {
 }
 
 .button-primary {
-  background: var(--green);
+  background: var(--blue);
   color: var(--button-label);
 }
 
@@ -397,12 +399,12 @@ p {
 
 .hero-art::before {
   inset: 17px;
-  border: 1px solid color-mix(in srgb, var(--green) 13%, transparent);
+  border: 1px solid color-mix(in srgb, var(--blue) 13%, transparent);
 }
 
 .hero-art::after {
   inset: 0;
-  background-image: radial-gradient(color-mix(in srgb, var(--green) 14%, transparent) .65px, transparent .65px);
+  background-image: radial-gradient(color-mix(in srgb, var(--blue) 14%, transparent) .65px, transparent .65px);
   background-size: 10px 10px;
   opacity: .27;
 }
@@ -412,7 +414,7 @@ p {
   z-index: 1;
   width: 67%;
   aspect-ratio: 1;
-  border: 1px solid color-mix(in srgb, var(--green) 23%, transparent);
+  border: 1px solid color-mix(in srgb, var(--blue) 23%, transparent);
   border-radius: 50%;
 }
 
@@ -434,9 +436,9 @@ p {
   justify-content: center;
   flex-direction: column;
   border-radius: 50%;
-  background: var(--green-dark);
-  color: #f6f5f0;
-  box-shadow: 0 0 0 12px color-mix(in srgb, var(--green) 8%, transparent), 0 18px 50px color-mix(in srgb, var(--ink) 13%, transparent);
+  background: var(--blue-dark);
+  color: #f3f7fc;
+  box-shadow: 0 0 0 12px color-mix(in srgb, var(--blue) 8%, transparent), 0 18px 50px color-mix(in srgb, var(--ink) 13%, transparent);
 }
 
 .art-monogram {
@@ -451,11 +453,11 @@ p {
   width: 25px;
   height: 1px;
   margin: 13px 0 10px;
-  background: var(--lime);
+  background: var(--sky);
 }
 
 .art-caption {
-  color: #d3d8c3;
+  color: #d5e4f2;
   font-size: 7px;
   letter-spacing: 1.1px;
 }
@@ -576,8 +578,8 @@ p {
 }
 
 .experience {
-  background: var(--green-dark);
-  color: #f6f5f0;
+  background: var(--blue-dark);
+  color: #f3f7fc;
 }
 
 .experience-heading {
@@ -588,26 +590,26 @@ p {
 }
 
 .section-label-light {
-  color: #aab3a7;
+  color: #adbed0;
 }
 
 .section-label-light span {
-  color: var(--lime);
+  color: var(--sky);
 }
 
 .section-heading-light {
   margin: 28px 0 0;
-  color: #f6f5f0;
+  color: #f3f7fc;
 }
 
 .section-heading-light em {
-  color: var(--lime);
+  color: var(--sky);
 }
 
 .experience-lead {
   max-width: 335px;
   margin: 0 0 5px auto;
-  color: #c1c9bf;
+  color: #c5d4e2;
   font-size: 12px;
   line-height: 1.9;
 }
@@ -616,32 +618,32 @@ p {
   display: grid;
   min-height: 206px;
   padding: 35px 0;
-  border-top: 1px solid rgb(246 245 240 / 20%);
+  border-top: 1px solid rgb(243 247 252 / 20%);
   align-items: start;
   gap: 25px;
   grid-template-columns: 42px 1fr 110px;
 }
 
 .experience-card:last-child {
-  border-bottom: 1px solid rgb(246 245 240 / 20%);
+  border-bottom: 1px solid rgb(243 247 252 / 20%);
 }
 
 .experience-index {
   padding-top: 3px;
-  color: #98a598;
+  color: #a3bad1;
   font-family: var(--mono);
   font-size: 10px;
 }
 
 .card-kicker {
   margin-bottom: 14px;
-  color: #aeb9ac;
+  color: #b4c8dc;
   font-size: 8px;
 }
 
 .card-kicker span {
   padding-inline: 5px;
-  color: var(--lime);
+  color: var(--sky);
 }
 
 .experience-main h3,
@@ -655,14 +657,14 @@ p {
 
 .experience-place {
   margin-bottom: 11px;
-  color: #d7dccf;
+  color: #d8e4f0;
   font-size: 11px;
 }
 
 .experience-description {
   max-width: 640px;
   margin-bottom: 0;
-  color: #b4c0b5;
+  color: #c0cedd;
   font-size: 11px;
   line-height: 1.8;
 }
@@ -673,8 +675,8 @@ p {
   height: 85px;
   justify-self: end;
   place-items: center;
-  border: 1px solid rgb(246 245 240 / 19%);
-  color: var(--lime);
+  border: 1px solid rgb(243 247 252 / 19%);
+  color: var(--sky);
 }
 
 .mark-reporter {
@@ -683,7 +685,7 @@ p {
 
 .mark-reporter span {
   height: 66px;
-  color: #c2d47a;
+  color: #c2d9f1;
   font-family: var(--serif);
   font-size: 88px;
   line-height: 1;
@@ -728,7 +730,7 @@ p {
   place-items: center;
   border: 1px solid var(--line);
   border-radius: 50%;
-  color: var(--green);
+  color: var(--blue);
 }
 
 .education-icon svg {
@@ -762,8 +764,8 @@ p {
 
 .contact {
   overflow: hidden;
-  background: #1b3028;
-  color: #f6f5f0;
+  background: var(--blue-dark);
+  color: #f3f7fc;
 }
 
 .contact-inner {
@@ -779,7 +781,7 @@ p {
 
 .contact-overline {
   margin-bottom: 20px;
-  color: #b6c1ad;
+  color: #c3d3e2;
   font-size: 8px;
 }
 
@@ -792,7 +794,7 @@ p {
 }
 
 .contact h2 em {
-  color: var(--lime);
+  color: var(--sky);
 }
 
 .contact-email {
@@ -800,13 +802,13 @@ p {
   align-items: center;
   gap: 15px;
   padding-bottom: 7px;
-  border-bottom: 1px solid rgb(246 245 240 / 44%);
+  border-bottom: 1px solid rgb(243 247 252 / 44%);
   font-size: 14px;
   transition: color .2s ease;
 }
 
 .contact-email:hover {
-  color: var(--lime);
+  color: var(--sky);
 }
 
 .contact-details {
@@ -824,19 +826,19 @@ p {
 }
 
 .detail-label {
-  color: #9fad9e;
+  color: #a9bfd5;
   font-size: 8px;
 }
 
 .contact-detail > a,
 .contact-detail > span:last-child {
-  color: #edf0e8;
+  color: #edf3f9;
   font-size: 12px;
   line-height: 1.6;
 }
 
 .contact-detail > a:hover {
-  color: var(--lime);
+  color: var(--sky);
 }
 
 .linkedin-text {
@@ -847,7 +849,7 @@ p {
 .site-footer {
   display: flex;
   min-height: 73px;
-  border-top: 1px solid rgb(246 245 240 / 20%);
+  border-top: 1px solid rgb(243 247 252 / 20%);
   align-items: center;
   justify-content: space-between;
   gap: 20px;
@@ -860,7 +862,7 @@ p {
 
 .site-footer p {
   margin: 0;
-  color: #aeb9ac;
+  color: #b7c9db;
   font-family: var(--serif);
   font-size: 11px;
   font-style: italic;
@@ -870,13 +872,13 @@ p {
   display: inline-flex;
   align-items: center;
   gap: 9px;
-  color: #c8d0c4;
+  color: #d1deeb;
   font-size: 8px;
   white-space: nowrap;
 }
 
 .back-top:hover {
-  color: var(--lime);
+  color: var(--sky);
 }
 
 @media (min-width: 1440px) {
