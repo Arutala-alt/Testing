@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f6f5f0">
+    <meta name="description" content="Portofolio Lalu Klampan Mas Bagus Pamanggihan, mahasiswa Teknik Informatika yang tertarik pada teknologi, komunikasi, dan pengembangan usaha.">
+    <title>Lalu Klampan — Portofolio</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <script>
+      (() => {
+        let theme;
+        try {
+          theme = localStorage.getItem("portfolio-theme");
+        } catch {
+          theme = null;
+        }
+        if (theme !== "light" && theme !== "dark") {
+          theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        }
+        document.documentElement.dataset.theme = theme;
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#konten">Lewati ke konten</a>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="wordmark" href="#beranda" aria-label="Lalu Klampan, ke beranda">
+          <span class="wordmark-mark" aria-hidden="true">LK</span>
+          <span class="wordmark-name">Lalu Klampan<span class="wordmark-dot">.</span></span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          <span class="menu-toggle-label">Menu</span>
+          <span class="menu-icon" aria-hidden="true"><span></span><span></span></span>
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="Navigasi utama">
+          <a href="#tentang">Tentang</a>
+          <a href="#pengalaman">Pengalaman</a>
+          <a href="#pendidikan">Pendidikan</a>
+          <a class="nav-contact" href="#kontak">Hubungi saya <span aria-hidden="true">↗</span></a>
+          <button class="theme-toggle" type="button" aria-label="Aktifkan tema gelap" aria-pressed="false">
+            <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.2 15.3A8.5 8.5 0 0 1 8.7 3.8 8.6 8.6 0 1 0 20.2 15.3Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.7"/></svg>
+            <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.7"/></svg>
+            <span class="theme-toggle-label">Tema gelap</span>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <main id="konten">
+      <section class="hero section-wrap" id="beranda" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> MAHASISWA TEKNIK INFORMATIKA <span class="eyebrow-divider">·</span> JAKARTA SELATAN</p>
+          <h1 id="hero-title">Halo, saya<br><span class="hero-name">Lalu Klampan.</span></h1>
+          <p class="hero-description">Saya tertarik pada bagaimana <em>teknologi, komunikasi,</em> dan ide bisa bertemu untuk menciptakan sesuatu yang bermakna.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#pengalaman">Jelajahi perjalanan saya <span aria-hidden="true">↓</span></a>
+            <a class="text-link" href="mailto:bgspmgihan@gmail.com">Mari terhubung <span aria-hidden="true">↗</span></a>
+            <a class="text-link resume-download" href="assets/resume-lalu-klampan.pdf" download="Resume-Lalu-Klampan-Mas-Bagus-Pamanggihan.pdf">
+              Unduh resume <span aria-hidden="true">↓</span>
+            </a>
+          </div>
+          <div class="hero-footnote">
+            <span class="footnote-line" aria-hidden="true"></span>
+            <p>Terus belajar. Terus bertumbuh.</p>
+          </div>
+        </div>
+
+        <div class="hero-art" aria-label="Monogram LK dengan ilustrasi lingkaran dekoratif" role="img">
+          <div class="art-orbit art-orbit-one"></div>
+          <div class="art-orbit art-orbit-two"></div>
+          <div class="art-spark art-spark-one" aria-hidden="true">✳</div>
+          <div class="art-spark art-spark-two" aria-hidden="true">✳</div>
+          <div class="art-center">
+            <span class="art-monogram">LK</span>
+            <span class="art-center-rule"></span>
+            <span class="art-caption">BERPIKIR · BERKARYA</span>
+          </div>
+          <span class="art-side-note">01 / PERKENALAN</span>
+          <span class="art-bottom-note">INFORMATIKA &amp; KOMUNIKASI</span>
+        </div>
+        <a class="scroll-cue" href="#tentang"><span class="scroll-cue-line" aria-hidden="true"></span> GULIR UNTUK MENGENAL</a>
+      </section>
+
+      <section class="intro section-wrap section-space" id="tentang" aria-labelledby="about-title">
+        <div class="section-label"><span>01</span> / TENTANG SAYA</div>
+        <div class="intro-content">
+          <h2 class="section-heading" id="about-title">Penasaran dengan banyak hal,<br><em>siap belajar lebih jauh.</em></h2>
+          <div class="intro-columns">
+            <p>Saya Lalu Klampan Mas Bagus Pamanggihan, mahasiswa semester pertama Teknik Informatika di UIN Syarif Hidayatullah Jakarta. Perjalanan saya menggabungkan ketertarikan pada teknologi dengan pengalaman nyata dalam organisasi, komunikasi, dan menjalankan usaha.</p>
+            <p>Semasa SMA, saya membangun dan mempromosikan brand Another Hater. Dari sana saya belajar tentang pemasaran, pengelolaan stok, penjualan, melayani pelanggan, dan operasional usaha. Saya ingin terus mengembangkan keterampilan dan pengalaman.</p>
+          </div>
+          <div class="skill-list" aria-label="Keterampilan utama">
+            <span>Bahasa Inggris</span>
+            <span>Bahasa Arab</span>
+            <span>Kolaborasi</span>
+            <span>Pemecahan masalah</span>
+            <span>Layanan pelanggan</span>
+            <span>Periklanan</span>
+            <span>Organisasi &amp; manajemen waktu</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="experience section-space" id="pengalaman" aria-labelledby="experience-title">
+        <div class="section-wrap">
+          <div class="experience-heading">
+            <div>
+              <div class="section-label section-label-light"><span>02</span> / PERJALANAN</div>
+              <h2 class="section-heading section-heading-light" id="experience-title">Belajar lewat<br><em>pengalaman.</em></h2>
+            </div>
+            <p class="experience-lead">Setiap ruang memberi pelajaran baru—tentang menyampaikan cerita, bekerja bersama, dan memahami kebutuhan orang lain.</p>
+          </div>
+
+          <article class="experience-card reporter-card">
+            <div class="experience-index">01</div>
+            <div class="experience-main">
+              <p class="card-kicker">ORGANISASI <span>·</span> AGUSTUS 2025 — SEKARANG</p>
+              <h3>Reporter</h3>
+              <p class="experience-place">Lembaga Pers Mahasiswa Institut UIN Jakarta</p>
+              <p class="experience-description">Mengumpulkan informasi, menulis, dan melaporkan berita seputar kampus maupun isu nasional.</p>
+            </div>
+            <div class="experience-mark mark-reporter" aria-hidden="true"><span>“</span></div>
+          </article>
+
+          <article class="experience-card">
+            <div class="experience-index">02</div>
+            <div class="experience-main">
+              <p class="card-kicker">ORGANISASI <span>·</span> JULI 2023 — JULI 2024</p>
+              <h3>Language Improvement Centre</h3>
+              <p class="experience-place">Divisi pengembangan bahasa · Ponpes Daarul Rahman 3</p>
+              <p class="experience-description">Mendorong penggunaan bahasa Inggris dan Arab dalam keseharian, merancang program sesuai tujuan organisasi, serta terlibat dalam kepanitiaan acara sekolah multilingual dan monolingual.</p>
+            </div>
+            <div class="experience-mark mark-language" aria-hidden="true">Aa</div>
+          </article>
+
+          <article class="experience-card brand-card">
+            <div class="experience-index">03</div>
+            <div class="experience-main">
+              <p class="card-kicker">USAHA MANDIRI <span>·</span> BERAWAL SEMASA SMA</p>
+              <h3>Another Hater</h3>
+              <p class="experience-place">Brand yang saya bangun dan promosikan</p>
+              <p class="experience-description">Sebuah pengalaman langsung dalam pemasaran, pengelolaan stok, penjualan, interaksi pelanggan, dan operasional usaha. Brand ini masih saya jalankan.</p>
+            </div>
+            <div class="experience-mark mark-brand" aria-hidden="true">AH.</div>
+          </article>
+        </div>
+      </section>
+
+      <section class="education section-wrap section-space" id="pendidikan" aria-labelledby="education-title">
+        <div class="section-label"><span>03</span> / PENDIDIKAN</div>
+        <div class="education-content">
+          <h2 class="section-heading" id="education-title">Sedang membangun<br><em>fondasi masa depan.</em></h2>
+          <div class="education-card">
+            <div class="education-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none"><path d="M5 18.5 24 9l19 9.5L24 28 5 18.5Z" stroke="currentColor" stroke-width="1.6"/><path d="M13 23v9c6.2 5.2 15.8 5.2 22 0v-9M43 19v12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="43" cy="33.5" r="2" fill="currentColor"/></svg>
+            </div>
+            <div>
+              <p class="card-kicker">JULI 2025 — SEKARANG</p>
+              <h3>Teknik Informatika</h3>
+              <p>Program sarjana · UIN Syarif Hidayatullah Jakarta</p>
+            </div>
+            <span class="education-status">SEDANG BERLANGSUNG</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="kontak" aria-labelledby="contact-title">
+        <div class="contact-inner section-wrap">
+          <div class="section-label section-label-light"><span>04</span> / KONTAK</div>
+          <div class="contact-layout">
+            <div>
+              <p class="contact-overline">ADA IDE ATAU INGIN BERKENALAN?</p>
+              <h2 id="contact-title">Mari mulai<br><em>percakapan.</em></h2>
+              <a class="contact-email" href="mailto:bgspmgihan@gmail.com">bgspmgihan@gmail.com <span aria-hidden="true">↗</span></a>
+            </div>
+            <div class="contact-details">
+              <div class="contact-detail">
+                <span class="detail-label">TELEPON</span>
+                <a href="tel:082125841743">0821 2584 1743</a>
+              </div>
+              <div class="contact-detail">
+                <span class="detail-label">LOKASI</span>
+                <span>Jakarta Selatan</span>
+              </div>
+              <div class="contact-detail">
+                <span class="detail-label">LINKEDIN</span>
+                <span class="linkedin-text">linkedin.com/in/Lalu klampan mas Bagus Pamanggihan</span>
+              </div>
+            </div>
+          </div>
+          <footer class="site-footer">
+            <a class="footer-mark" href="#beranda">LK<span>.</span></a>
+            <p>Dibuat dengan rasa ingin tahu dan semangat untuk terus bertumbuh.</p>
+            <a class="back-top" href="#beranda">KEMBALI KE ATAS <span aria-hidden="true">↑</span></a>
+          </footer>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
